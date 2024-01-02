@@ -56,6 +56,56 @@ while active:
 	    print(message)	
 	    
 #Using a break to exit a loop
+"""An example of break statement with while loop
+
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+    if count == 3:
+        break
+In this example, the while loop prints the current value of count in each iteration. However,
+when count becomes equal to 3, the break statement is encountered, and the loop is immediately terminated.
+In Python, the break statement is used to exit or terminate a loop prematurely, before the normal loop condition is met
+"""
+
+prompt = "Please enter the city you have visited"
+prompt += "\nEnter exit to stop: "
+
+while True:
+	city = input(prompt)
+	if city == "exit":  
+		break
+	else : 
+	    print(f"I'd love to go to {city.title()}\n")
+#It is used to exit a while loop immediately without running any remaining code in the loop, regardless of the results of any conditional test.    
+
+#Using continue in a loop
+"""Rather than breaking out of a program entirely without executing the rest of the code..we can use continue statement to return to the beginning 
+of the loop based on the result of a conditional test
+The code below ignores the print statement when it enocunters i==2,rather than breaking out of it unlike break
+for i in range(5):
+	if i == 2:
+		continue
+	print(f"{i}\n")	
+	"""
+
+
+#A program that counts from 1 to 10 but prints only the even number
+current_number = 0
+print("The odd numbers are: ") 
+while current_number < 10:
+	current_number += 1
+	if current_number % 2 == 0:
+		continue
+		print("I dare you to print this line")	
+	else:
+	    print(current_number)
+
+	    	
+
+
 
 
 
