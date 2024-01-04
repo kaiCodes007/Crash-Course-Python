@@ -67,5 +67,44 @@ describe_pet(pet_name = 'harry', animal_type = 'hamstring')
 describe_pet(animal_type = 'hamstring', pet_name = 'harry')  
 
 All three of those above function calls are equivalent in terms of the most latter one funcion defined.
+"""
+
+#Excercise
+"""A function named make_shirt that accepts a size and text of a message that should be printed on the shirt. Print a sentence with the summary
+Call the function using positional argument and keyword argument
+"""
+def make_shirt(size,message):
+	print(f"I want a shirt, written '{message.title()}' on size {size.upper()}\n")
+#Positional argument
+make_shirt('xl','python is fun')
+#Keyword argument
+make_shirt(message = 'Coding is awesome', size = 'L')
 
 
+"""Modify the make_shirt() so that the shirts are large by default with a message that reads 'I love python'
+Make a large shirt and a medium shirt with the default message and a shirt of any size with a different messafe
+"""
+def make_shirt(size = 'Large', message = 'i love python'):
+	print(f"I want a shirt, written '{message.title()}' on size {size.title()}")
+#A large shirt with default message value
+make_shirt()
+
+#A medium shirt with default message
+make_shirt('medium')
+
+#A shirt of any size with a different message
+make_shirt('anysize',"I am super-cool")
+
+#Equivalent function call for the last one
+make_shirt(size = 'anysize', message = 'I am super-cool')
+make_shirt(message = 'I am super-cool', size = 'anysize')
+
+
+"""Write a function called describe_city() that accepts the name of a city and its country. Give the parameter for the country a default value
+.Print a simple sentence , such as Kathmandu is in Nepal for three different cities , at least one of which is not default country
+"""	
+def describe_city(city,country = 'nepal'):
+	print(f"\n{city.title()} lies in {country.title()}")
+describe_city('kathmandu')
+describe_city(city = 'pokhara')	
+describe_city('delhi','india')
