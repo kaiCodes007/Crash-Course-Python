@@ -86,7 +86,7 @@ sent = []
 send_messages(unsent[:],sent)
 show_messages(unsent,sent)
 
-#we passsed a copy of the list to the function so that he original remains the same without being changed
+#we passsed a copy of the list to the function so that he original remains the same without being changedcd
 
         	
 
