@@ -54,7 +54,7 @@ while True:
 	print("\nPleas tell me your name. (Enter q anytime to exit)")
 
 	f_name = input("First name: ")
-	
+
 	if f_name == 'q':
 		break
 
