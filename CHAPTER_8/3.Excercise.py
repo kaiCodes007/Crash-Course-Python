@@ -7,7 +7,7 @@ def city_country(city,country):
 	return message
 
 print(city_country('kathmandu','nepal'))
-print(city_country('paris','france'))
+print(city_country('dhaka','bangladesh'))
 print(city_country('dublin','ireland'))
 
 
