@@ -54,9 +54,12 @@ while True:
 	print("\nPleas tell me your name. (Enter q anytime to exit)")
 
 	f_name = input("First name: ")
-	l_name = input("Last name:")
+	
 	if f_name == 'q':
 		break
+
+	l_name = input("Last name:")
+	
 	if l_name == 'q':	
 		break
 	name = get_formatted_name(f_name,l_name)	
